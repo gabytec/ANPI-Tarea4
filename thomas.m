@@ -27,7 +27,7 @@ function vectorZ = thomas(matrizA, vectorB)
       salida(indiceS, 1) = q(indiceS);
     else
       disp(p(indiceS));
-      disp(salida(indiceS+1));
+      disp(salida((indiceS+1), 1));
       disp(p(indiceS) * salida((indiceS + 1), 1));
       
       #disp(salida((indiceS + 1), 1));
@@ -38,6 +38,8 @@ function vectorZ = thomas(matrizA, vectorB)
   endwhile
   
   disp(salida)
+  disp(q)
+  disp(p)
 
 
   
